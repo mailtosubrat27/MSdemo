@@ -8,7 +8,7 @@ public class TestApiController {
 	
 	@GetMapping("/test_api")
 	public String testApi() {
-		System.out.println("----------- test -----------");
+		System.out.println("----------- test -----------***********************************");
 		return "test";
 	}
 	
