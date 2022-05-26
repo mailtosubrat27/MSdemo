@@ -49,7 +49,7 @@ pipeline {
                               openshift.newApp('codelikethewind', "--as-deployment-config").narrow('svc').expose() 
                             } 
 
-                            timeout(5) { 
+                            timeout(50) { 
                               openshift.selector("dc", "codelikethewind").related('pods').untilEach(1) { 
                                 return (it.object().status.phase == "Running") 
       } 
