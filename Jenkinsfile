@@ -27,7 +27,7 @@ pipeline {
                     def buildConfigExists = openshift.selector("bc", "codelikethewind").exists() 
     
                     if(!buildConfigExists){ 
-                      openshift.newBuild("--name=codelikethewind", "--docker-image= redhat-openjdk18-openshift", "--binary")
+                      openshift.newBuild("--name=codelikethewind", "--docker-image=registry.redhat.io/jboss-eap-7/eap74-openjdk8-openshift-rhel7", "--binary")
                      } 
     
                     openshift.selector("bc", "codelikethewind").startBuild("--from-file=target/MSdemo-0.0.1-SNAPSHOT.jar", "--follow") } }
