@@ -11,7 +11,7 @@
 	<groupId>com</groupId>
 	<artifactId>MSdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>MSdemo</name>
 	<description>Demo project for Spring Boot MS</description>
 	<properties>
 		<java.version>1.8</java.version>
