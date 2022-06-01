@@ -59,7 +59,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>msdemo</finalName>
+		<finalName>MSDemo</finalName>
 	</build>
 
 </project>
