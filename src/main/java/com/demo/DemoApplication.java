@@ -12,7 +12,7 @@ public class DemoApplication {
 	@GetMapping("/")
 	public String testApi() {
 		System.out.println("----------- First ---------");
-		return "deployed......";
+		return "Welcome to the SpringBoot application... It is deployed......";
 	}
 	
 

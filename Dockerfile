@@ -42,5 +42,6 @@
 
 
 FROM openjdk:8-jdk-alpine
-COPY target/MSdemo-0.0.1-SNAPSHOT.jar demo.jar
-ENTRYPOINT ["java","-jar","/demo.jar"]
+EXPOSE 8080
+ADD target/msdemo.jar msdemo.jar
+ENTRYPOINT ["java","-jar","msdemo.jar"]
